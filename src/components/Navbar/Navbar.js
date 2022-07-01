@@ -34,24 +34,46 @@ const Navbar = () => {
             <ul className={isToggle ? "navbar-nav" : "navbar-nav flex-row"}>
               <li className="nav-item text-light">
                 <span className="nav-item__first">Hello, Guest</span>
-                <span className="nav-item__second"> Sign In</span>
+                <span
+                  className="nav-item__second"
+                  onClick={() => setIsToggle(false)}
+                >
+                  {" "}
+                  Sign In
+                </span>
               </li>
               <li className="nav-item text-light">
                 <span className="nav-item__first">Returns</span>
-                <span className="nav-item__second"> & Orders</span>
+                <span
+                  className="nav-item__second"
+                  onClick={() => setIsToggle(false)}
+                >
+                  {" "}
+                  & Orders
+                </span>
               </li>
               <li className="nav-item text-light">
                 <span className="nav-item__first">Your</span>
-                <span className="nav-item__second"> Prime</span>
+                <span
+                  className="nav-item__second"
+                  onClick={() => setIsToggle(false)}
+                >
+                  {" "}
+                  Prime
+                </span>
               </li>
               <li>
-                <span className="nav-item__cart">
-                  <Badge badgeContent={cartLen} color="primary">
-                    <Link to="/cart" className="text-light">
+                <Link
+                  to="/cart"
+                  className="text-light"
+                  onClick={() => setIsToggle(false)}
+                >
+                  <span className="nav-item__cart">
+                    <Badge badgeContent={cartLen} color="primary">
                       <ShoppingCartIcon />
-                    </Link>
-                  </Badge>
-                </span>
+                    </Badge>
+                  </span>
+                </Link>
               </li>
             </ul>
           </div>
