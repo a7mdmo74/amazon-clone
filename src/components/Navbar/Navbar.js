@@ -34,13 +34,15 @@ const Navbar = () => {
             <ul className={isToggle ? "navbar-nav" : "navbar-nav flex-row"}>
               <li className="nav-item text-light">
                 <span className="nav-item__first">Hello, Guest</span>
-                <span
-                  className="nav-item__second"
-                  onClick={() => setIsToggle(false)}
-                >
-                  {" "}
-                  Sign In
-                </span>
+                <Link to="/login">
+                  <span
+                    className="nav-item__second text-light"
+                    onClick={() => setIsToggle(false)}
+                  >
+                    {" "}
+                    Sign In
+                  </span>
+                </Link>
               </li>
               <li className="nav-item text-light">
                 <span className="nav-item__first">Returns</span>

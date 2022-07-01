@@ -23,7 +23,7 @@ const Item = ({ product }) => {
       } else {
         dispatch(addCart({ id, price, rate, imgSrc, desc }));
         toast.success("Item added to cart", {
-          position: "top-right",
+          position: "top-left",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,

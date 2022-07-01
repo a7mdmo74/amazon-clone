@@ -1,9 +1,9 @@
-import { Navbar } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./Pages/Cart/Cart";
 import Home from "./Pages/Home/Home";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import User from "./Pages/User/User";
 
 function App() {
   return (
@@ -20,10 +20,10 @@ function App() {
         pauseOnHover
       />
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<User />} />
         </Routes>
       </Router>
     </div>
