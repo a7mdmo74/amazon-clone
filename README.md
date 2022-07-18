@@ -2,7 +2,7 @@
 
 ## A7mdMo74
 
-- Responsive amazon clone Website React hooks.
+- Responsive amazon clone Website using React hooks.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 - Developed first with the Mobile First methodology, then for desktop.
 
